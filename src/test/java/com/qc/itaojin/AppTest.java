@@ -1,4 +1,4 @@
-package com.qc.itaojin.zookeeper_client;
+package com.qc.itaojin;
 
 import junit.framework.Test;
 import junit.framework.TestCase;
