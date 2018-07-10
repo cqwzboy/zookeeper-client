@@ -2,15 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="73367844-b9d7-4ef6-b369-4087e792d3ee" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_fastjson_1_2_44.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_6_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/qc/itaojin/autoconfiguration/ItaojinZKAutoConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qc/itaojin/autoconfiguration/ItaojinZKAutoConfiguration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/qc/itaojin/autoconfiguration/ItaojinZKAutoConfiguration.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/qc/itaojin/autoconfiguration/ItaojinZKAutoConfiguration.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/zookeeper-client-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/zookeeper-client-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zookeeper-client.iml" beforeDir="false" afterPath="$PROJECT_DIR$/zookeeper-client.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/qc/itaojin/common/WatcherRegister.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qc/itaojin/common/WatcherRegister.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/qc/itaojin/service/ZookeeperServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qc/itaojin/service/ZookeeperServiceImpl.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -22,7 +15,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="517">
@@ -49,11 +42,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="WatcherRegister.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="WatcherRegister.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/qc/itaojin/common/WatcherRegister.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="51" column="78" selection-start-line="51" selection-start-column="78" selection-end-line="51" selection-end-column="78" />
+            <state relative-caret-position="514">
+              <caret line="51" lean-forward="true" selection-start-line="51" selection-end-line="51" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -64,8 +57,8 @@
       <file leaf-file-name="ZookeeperServiceImpl.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/qc/itaojin/service/ZookeeperServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="280">
-              <caret line="19" column="22" selection-start-line="19" selection-start-column="22" selection-end-line="19" selection-end-column="22" />
+            <state relative-caret-position="943">
+              <caret line="170" column="20" lean-forward="true" selection-start-line="170" selection-start-column="20" selection-end-line="170" selection-end-column="20" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -122,10 +115,10 @@
         <option value="$PROJECT_DIR$/src/main/java/com/qc/itaojin/service/ZookeeperServiceImpl2.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/qc/itaojin/ConnectTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/qc/itaojin/entity/ZKNodeInfoWrapper.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/qc/itaojin/service/ZookeeperServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/qc/itaojin/common/WatcherRegister.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/qc/itaojin/autoconfiguration/ItaojinZKAutoConfiguration.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/qc/itaojin/service/ZookeeperServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/qc/itaojin/common/WatcherRegister.java" />
       </list>
     </option>
   </component>
@@ -516,7 +509,7 @@
       <workItem from="1530692910281" duration="27246000" />
       <workItem from="1530791714605" duration="217000" />
       <workItem from="1530858746268" duration="1379000" />
-      <workItem from="1531185600158" duration="1738000" />
+      <workItem from="1531185600158" duration="4183000" />
     </task>
     <task id="LOCAL-00001" summary="2018-07-05 更新">
       <created>1530791884363</created>
@@ -532,7 +525,14 @@
       <option name="project" value="LOCAL" />
       <updated>1530875775156</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="2018-07-10 更新">
+      <created>1531198423950</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1531198423950</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -568,7 +568,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="30580000" />
+    <option name="totallyTimeSpent" value="33025000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -652,7 +652,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="2018-07-05 更新" />
-    <option name="LAST_COMMIT_MESSAGE" value="2018-07-05 更新" />
+    <MESSAGE value="2018-07-10 更新" />
+    <option name="LAST_COMMIT_MESSAGE" value="2018-07-10 更新" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/main/java/com/qc/itaojin/config/ItaojinZookeeperConfig.java">
@@ -922,26 +923,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/qc/itaojin/common/WatcherRegister.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="51" column="78" selection-start-line="51" selection-start-column="78" selection-end-line="51" selection-end-column="78" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/qc/itaojin/service/ZookeeperServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="19" column="22" selection-start-line="19" selection-start-column="22" selection-end-line="19" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/qc/itaojin/config/ItaojinZookeeperConfig.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="350">
@@ -970,6 +951,26 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="517">
           <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/qc/itaojin/service/ZookeeperServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="943">
+          <caret line="170" column="20" lean-forward="true" selection-start-line="170" selection-start-column="20" selection-end-line="170" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/qc/itaojin/common/WatcherRegister.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="514">
+          <caret line="51" lean-forward="true" selection-start-line="51" selection-end-line="51" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

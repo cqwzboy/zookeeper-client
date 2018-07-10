@@ -6,6 +6,7 @@ import lombok.extern.slf4j.Slf4j;
 import org.apache.zookeeper.*;
 import org.apache.zookeeper.data.ACL;
 import org.apache.zookeeper.data.Stat;
+import org.springframework.util.Assert;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -147,6 +148,9 @@ public class ZookeeperServiceImpl implements IZookeeperService {
 
     @Override
     public boolean registerLeader(String path, byte[] data) {
+        // 初始化父节点目录
+        initDirectory(path);
+
         // 创建临时节点进行leader选举
         try {
             if(zooKeeper.exists(path, false) != null){
@@ -161,5 +165,27 @@ public class ZookeeperServiceImpl implements IZookeeperService {
             e.printStackTrace();
         }
         return false;
+    }
+
+    /**
+     * 初始化竞争临时节点的父节点
+     * */
+    private void initDirectory(String path) {
+        Assert.hasLength(path, "zookeeper inition directory is null");
+        if(path.indexOf("/") == -1){
+            throw new IllegalArgumentException("zookeeper inition directory must contains '/'");
+        }
+
+        String[] paths = path.split("/");
+        String p = "";
+        // 忽略最后一层临时节点
+        for (int i=0;i<paths.length-1;i++) {
+            String node = paths[i];
+            if(StringUtils.isBlank(node)){
+                continue;
+            }
+            p = StringUtils.contact(p, "/", node);
+            create(p, null);
+        }
     }
 }

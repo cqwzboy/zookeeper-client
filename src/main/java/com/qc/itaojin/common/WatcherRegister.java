@@ -39,6 +39,17 @@ public class WatcherRegister extends Thread {
      * */
     private List<? extends Runnable> tasks;
 
+    /**
+     * @desc 开启监听
+     * @param ephemeralNode zk临时节点
+     * @param tasks canal客户端任务列表
+     * */
+    public void enableListen(String ephemeralNode, List<? extends Runnable> tasks){
+        this.path = ephemeralNode;
+        this.tasks = tasks;
+        this.start();
+    }
+
     @Override
     public void run() {
         if(StringUtils.isBlank(getPath())){
