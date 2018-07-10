@@ -5,6 +5,9 @@ import com.qc.itaojin.common.ZookeeperFactory;
 import com.qc.itaojin.config.ItaojinZookeeperConfig;
 import com.qc.itaojin.service.IZookeeperService;
 import com.qc.itaojin.service.ZookeeperServiceImpl;
+import lombok.extern.slf4j.Slf4j;
+import org.apache.zookeeper.WatchedEvent;
+import org.apache.zookeeper.Watcher;
 import org.apache.zookeeper.ZooKeeper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnClass;
@@ -21,6 +24,7 @@ import org.springframework.context.annotation.Configuration;
 @EnableConfigurationProperties(ItaojinZookeeperConfig.class)
 @ConditionalOnClass({IZookeeperService.class, WatcherRegister.class})
 @ConditionalOnProperty(prefix = "itaojin", value = "enabled", matchIfMissing = true)
+@Slf4j
 public class ItaojinZKAutoConfiguration {
 
     @Autowired
@@ -30,7 +34,12 @@ public class ItaojinZKAutoConfiguration {
     @ConditionalOnMissingBean
     public IZookeeperService zookeeperService(){
         IZookeeperService zookeeperService = new ZookeeperServiceImpl();
-        ZooKeeper zooKeeper = ZookeeperFactory.getInstance().getZookeeper(5000, null, zkConfig);
+        ZooKeeper zooKeeper = ZookeeperFactory.getInstance().getZookeeper(5000, new Watcher() {
+            @Override
+            public void process(WatchedEvent watchedEvent) {
+                log.info("receive event : " + watchedEvent.getType().name());
+            }
+        }, zkConfig);
         ((ZookeeperServiceImpl) zookeeperService).setZooKeeper(zooKeeper);
         return zookeeperService;
     }

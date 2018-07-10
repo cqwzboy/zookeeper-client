@@ -15,7 +15,6 @@
     <maven.compiler.source>1.8</maven.compiler.source>
     <maven.compiler.target>1.8</maven.compiler.target>
     <spring.boot.version>1.5.14.RELEASE</spring.boot.version>
-    <lombok.version>1.18.0</lombok.version>
     <generic-util.version>1.0-SNAPSHOT</generic-util.version>
     <zookeeper.version>3.4.10</zookeeper.version>
   </properties>
@@ -34,14 +33,10 @@
       <version>${spring.boot.version}</version>
     </dependency>
     <dependency>
-      <groupId>org.projectlombok</groupId>
-      <artifactId>lombok</artifactId>
-      <version>${lombok.version}</version>
-    </dependency>
-    <dependency>
       <groupId>com.qc.itaojin</groupId>
       <artifactId>generic-util</artifactId>
       <version>${generic-util.version}</version>
+      <scope>provided</scope>
     </dependency>
 
     <!--zookeeper-->
