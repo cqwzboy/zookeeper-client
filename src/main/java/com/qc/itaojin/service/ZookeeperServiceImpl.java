@@ -16,7 +16,7 @@ import java.util.List;
  */
 @Data
 @Slf4j
-public class ZookeeperServiceImpl extends BaseService implements IZookeeperService {
+public class ZookeeperServiceImpl extends BaseServiceImpl implements IZookeeperService {
 
     private ZooKeeper zooKeeper;
 
